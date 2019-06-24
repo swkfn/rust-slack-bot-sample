@@ -949,7 +949,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rust-slack-bot-sample"
+name = "rust_slack_bot_sample"
 version = "0.1.0"
 dependencies = [
  "slack 0.22.0 (registry+https://github.com/rust-lang/crates.io-index)",
