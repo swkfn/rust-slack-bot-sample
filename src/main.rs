@@ -17,7 +17,7 @@ fn main() {
 }
 
 fn api_key() -> String {
-    let content = fs::read_to_string("slack_api");
+    let content = fs::read_to_string("../slack_api");
     match content {
         Ok(content) => content,
         Err(_) => {

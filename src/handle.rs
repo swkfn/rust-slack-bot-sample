@@ -33,19 +33,16 @@ impl MyHandle {
             _ => return
         };
         let channel: String = message_standard.channel.unwrap();
+        let user = message_standard.user.unwrap_or("".to_string());
 
         let bot_id: &str = cli.start_response().slf.as_ref().unwrap().id.as_ref().unwrap();
-        if &message_standard.user.unwrap() == bot_id {
+        if &user == bot_id {
             println!("Is own message");
             return
         }
 
         let text: String = message_standard.text.unwrap();
-        if !text.contains(bot_id) {
-            println!("Is not a mention");
-            return
-        }
 
-        action::respond(&bot_id, &text, &channel, &cli);
+        action::respond(&text, &channel, &cli, &user);
     }
 }
