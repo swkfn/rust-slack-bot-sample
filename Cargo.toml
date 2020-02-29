@@ -4,5 +4,4 @@ version = "0.1.0"
 authors = ["swkfn <sw.kfn4410@gmail.com>"]
 
 [dependencies]
-slack = "0.22.0"
-slack_api = "0.17.0"
+slack_api = "0.22.0"

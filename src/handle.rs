@@ -1,3 +1,4 @@
+/*
 extern crate slack;
 
 use action;
@@ -46,3 +47,4 @@ impl MyHandle {
         action::respond(&text, &channel, &cli, &user);
     }
 }
+*/

@@ -1,6 +1,6 @@
-extern crate slack;
 extern crate slack_api;
 
+/*
 use self::slack::RtmClient;
 
 pub fn respond(text: &str, channel: &str, cli: &RtmClient, user: &str) {
@@ -15,3 +15,4 @@ pub fn respond(text: &str, channel: &str, cli: &RtmClient, user: &str) {
         let _ = cli.sender().send_message(channel, ":+1:");
     }
 }
+*/
